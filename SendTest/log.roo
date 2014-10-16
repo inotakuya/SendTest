@@ -1,0 +1,36 @@
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-10-12 11:47:24
+project --topLevelPackage jp.com.inotaku --projectName SendTest --java 7 --packaging JAR
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-10-12 11:47:35
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-10-12 11:47:41
+web mvc setup
+persistence setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY 
+entity jpa --class jp.com.inotaku.domain.Book --activeRecord --testAutomatically --serializable 
+field number --fieldName bookId --type long --notNull --unique 
+field string --fieldName bookName --notNull 
+field number --fieldName price --type int --notNull --min 0
+repository jpa --interface ~.repository.BookRipository --entity ~.domain.Book
+service type --interface ~.service.BookService --entity ~.domain.Book
+web mvc all --package ~.web
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-10-12 13:36:58
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-10-12 19:35:37
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-10-12 19:37:34
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-10-12 21:18:41
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-10-12 21:59:55
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-10-12 22:10:12
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-10-12 22:11:23
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-10-12 23:09:18
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-10-12 23:34:42
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-10-12 23:55:36
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-10-13 00:07:45
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-10-13 00:22:02
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-10-13 01:28:26
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-10-13 01:41:01
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-10-15 18:16:16
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-10-15 18:23:49
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-10-15 18:26:11
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-10-15 19:47:17
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-10-15 19:49:28
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-10-16 00:27:39
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-10-16 00:29:35
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log opened at 2014-10-16 01:11:28
+// Spring Roo 1.2.5.RELEASE [rev 8341dc2] log closed at 2014-10-16 03:44:33
