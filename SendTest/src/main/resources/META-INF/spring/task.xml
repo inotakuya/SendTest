@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
+
+	<task:scheduler id="sendTaskTest" pool-size="10"/>
+	
+	<task:scheduled-tasks scheduler="sendTaskTest">
+		<task:scheduled ref="sendTask" method="send" fixed-delay="10"/>
+	</task:scheduled-tasks>
+	
+	<bean id="sendTask" class="jp.com.inotaku.task.SendTask"></bean>
+</beans>
